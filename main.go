@@ -18,6 +18,7 @@ var injuredPlayers []Player
 
 func writeToJSON(players []Player, fileName string) {
 
+	// Alex Gray helped me with this function
 	jsonData, err := json.MarshalIndent(players, "", "    ")
 	if err != nil {
 		panic(err)
